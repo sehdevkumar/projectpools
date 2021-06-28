@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.sectionOne{
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+
+}.sectionOne .burger{
+    position: fixed;
+    left: 20px;
+    top: 40%;
+    z-index: 100;
+    cursor: pointer;
+
+}.sectionOne .burger > div{
+    width: 40px;
+    height: 5px;
+    background: #e45817;
+    margin: 10px;
+
+}.card-container{
+    width: 1000px;
+    /* margin: auto; */
+    /* background: #FFFFFF; */
+    position: absolute;
+    justify-content: space-around;
+    height: auto;
+    display: flex;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 800px;
+    font-family: 'Russo One', sans-serif;
+    
+}.card-container2{
+    width: 1000px;
+    /* margin: auto; */
+    /* background: #FFFFFF; */
+    position: absolute;
+    justify-content: space-around;
+    height: auto;
+    display: flex;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 1600px;
+    font-family: 'Russo One', sans-serif;
+    
+}.card-container > .card{
+    width: 400px;
+    box-shadow: -1px 2px 6px -2px rgba(0,0,0,0.3);
+}.card-container2 > .card{
+    width: 400px;
+    box-shadow: -1px 2px 6px -2px rgba(0,0,0,0.3);
+}
+
+.sectionTwo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     font-family: 'Russo One', sans-serif;
+}.sectionThree{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     font-family: 'Russo One', sans-serif;
+     /* background: cornsilk; */
+     color: cornsilk;
+}.Slide-Menu-Bar{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(12, 21, 22);
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    left: -50%;
+    top: 50%;
+    box-shadow: 2px -2px 7px 1px rgba(0,0,0,0.4);
+    padding: 10px;
+    color: #FFFFFF;
+    margin: 0;  
+    transition: all .34s ease-in;  
+    visibility: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    align-items: center;
+}.Slide-Menu-Bar.active{
+    left: 50%;
+    transition: all .34s ease-out;
+    visibility: visible;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width:769px){
+ 
+    .card-container{
+        width: 100%;
+    }.card-container > .card{
+        width: 150px;
+    }  
+      .card-container2{
+        width: 100%;
+    }.card-container2 > .card{
+        width: 150px;
+    }   
+    .sectionOne .burger{
+    position: fixed;
+    left: 80%;
+    top: 10px;
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+}
+@media (max-width:914px){
+ @media (min-width:780px){
+    .card-container{
+        width: 100%;
+    }.card-container > .card{
+        width: 290px;
+    }  
+      .card-container2{
+        width: 100%;
+    }.card-container2 > .card{
+        width: 290px;
+    }   
+
+ }
+}
